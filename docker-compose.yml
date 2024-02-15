@@ -8,6 +8,7 @@ services:
       - "3000:3000"
     volumes:
       - ./node:/app
+      - /app/node_modules
     networks:
       - fc-network
     depends_on:
